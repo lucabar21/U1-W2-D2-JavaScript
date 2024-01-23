@@ -51,23 +51,26 @@ if (numEight === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-const product1 = 35;
+const product1 = 15;
 const product2 = 25;
 
 const totalShoppingCart = product1 + product2;
 
-if (totalShoppingCart >= 50) {
-  const result = totalShoppingCart + 10;
+let result;
+
+if (totalShoppingCart <= 50) {
+  result = totalShoppingCart + 10;
 } else {
-  const result = totalShoppingCart + 0;
+  result = totalShoppingCart + 0;
 }
-console.log("Es.5 " + "Il saldo totale per l'acquisto della merce è di: " + totalShoppingCart + "€");
+
+console.log("Es.5 " + "Il saldo totale per l'acquisto della merce è di: " + result + "€");
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-let result;
+
 if (totalShoppingCart >= 50) {
   result = totalShoppingCart - (20 * totalShoppingCart) / 100 + 10;
 } else {
