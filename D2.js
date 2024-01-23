@@ -67,27 +67,21 @@ console.log("Es.5 " + "Il saldo totale per l'acquisto della merce è di: " + tot
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+let result;
+if (totalShoppingCart >= 50) {
+  result = totalShoppingCart - (20 * totalShoppingCart) / 100 + 10;
+} else {
+  result = totalShoppingCart - (20 * totalShoppingCart) / 100 + 0;
+}
+console.log(
+  "Es.5 " + "Il saldo totale per l'acquisto della merce è con la promozione del Black Friday di: " + result + "€"
+);
 
-// {
-//   const newProducts1 = product1 - product1 * 0.2;
-//   const newProducts2 = product2 - product2 * 0.2;
-
-//   totalShoppingCart = newProducts1 + newProducts2;
-
-//   if (totalShoppingCart >= 50) {
-//     const result = totalShoppingCart + 10;
-//   } else {
-//     const result = totalShoppingCart + 0;
-//   }
-//   console.log("Es.5 " + "Il saldo totale per l'acquisto della merce è di: " + totalShoppingCart + "€");
-// }
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
